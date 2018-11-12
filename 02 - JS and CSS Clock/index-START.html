@@ -71,8 +71,9 @@
       function setDate() {
         const now = new Date ();
         const seconds = now.getSeconds();
-        const secondDegrees = (seconds / 60) * 360;
+        const secondDegrees = ((seconds / 60) * 360) + 90;
         secondHand.style.transform = `rotate(${secondDegrees}deg)`
+        console.log(seconds)
       }
 
 
