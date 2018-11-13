@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -22,9 +22,21 @@
 
   <style>
 
-    /*
-      misc styles, nothing to do with CSS variables
-    */
+   :root{
+     --spacing: 10px;
+     --blur: 20px;
+     --base: yellow;
+   }
+
+   img {
+     padding: var(--spacing);
+     background: var(--base);
+     filter: var(--blur);
+   }
+
+   .hl{
+     color: var(--base);
+   }
 
     body {
       text-align: center;
@@ -45,6 +57,8 @@
   </style>
 
   <script>
+    
+
   </script>
 
 </body>
